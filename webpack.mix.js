@@ -50,8 +50,8 @@ mix.webpackConfig({
                   });
 
 //mix.sourceMaps().js('resources/assets/js/app.js', 'public/v2/js');
-mix.js('resources/assets/js/app.js', 'public/v1/js');
-mix.js('resources/assets/js/app_vue.js', 'public/v1/js');
-mix.js('resources/assets/js/create_transaction.js', 'public/v1/js');
-mix.js('resources/assets/js/edit_transaction.js', 'public/v1/js');
-mix.js('resources/assets/js/profile.js', 'public/v1/js');
+mix.js('resources/assets/js/v1/app.js', 'public/v1/js');
+mix.js('resources/assets/js/v1/app_vue.js', 'public/v1/js');
+mix.js('resources/assets/js/v1/create_transaction.js', 'public/v1/js');
+mix.js('resources/assets/js/v1/edit_transaction.js', 'public/v1/js');
+mix.js('resources/assets/js/v1/profile.js', 'public/v1/js');
