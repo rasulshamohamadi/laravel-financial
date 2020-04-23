@@ -1,23 +1,23 @@
 <template>
-  <CSidebar 
-    fixed 
+  <CSidebar
+    fixed
     :minimize="minimize"
     :show="show"
     @update:show="(value) => $store.commit('set', ['sidebarShow', value])"
   >
     <CSidebarBrand class="d-md-down-none" to="/">
-      <CIcon 
-        class="c-sidebar-brand-full" 
-        name="logo" 
-        size="custom-size" 
-        :height="35" 
+      <CIcon
+        class="c-sidebar-brand-full"
+        name="logo"
+        size="custom-size"
+        :height="35"
         viewBox="0 0 556 134"
       />
-      <CIcon 
-        class="c-sidebar-brand-minimized" 
-        name="logo" 
-        size="custom-size" 
-        :height="35" 
+      <CIcon
+        class="c-sidebar-brand-minimized"
+        name="logo"
+        size="custom-size"
+        :height="35"
         viewBox="0 0 110 134"
       />
     </CSidebarBrand>
@@ -38,10 +38,10 @@ export default {
   nav,
   computed: {
     show () {
-      return this.$store.state.sidebarShow 
+      return this.$store.state.sidebarShow
     },
     minimize () {
-      return this.$store.state.sidebarMinimize 
+      return this.$store.state.sidebarMinimize
     }
   }
 }

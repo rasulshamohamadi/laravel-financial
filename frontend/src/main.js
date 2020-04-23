@@ -9,7 +9,7 @@ import store from './store'
 
 Vue.use(VueI18n);
 
-// // Create VueI18n instance with options
+// Create VueI18n instance with options
 const i18n = new VueI18n({
                              locale: document.documentElement.lang, // set locale
                              fallbackLocale: 'en',
@@ -41,15 +41,15 @@ Vue.config.performance = true;
 Vue.use(CoreuiVue);
 Vue.prototype.$log = console.log.bind(console);
 
-new Vue(
-    {
-        i18n,
-        router,
-        store,
-        icons,
-        template: '<App/>',
-        components: {
-            App
-        }
-    }
-).mount('#app');
+
+new Vue({
+            el: '#app',
+            i18n,
+            router,
+            store,
+            icons,
+            template: '<App/>',
+            components: {
+                App
+            }
+        });

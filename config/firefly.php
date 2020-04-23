@@ -162,7 +162,7 @@ return [
     'update_endpoint'         => 'https://version.firefly-iii.org/index.json',
     'send_telemetry'          => env('SEND_TELEMETRY', false),
     'telemetry_endpoint'      => 'https://telemetry.firefly-iii.org',
-    'layout'                  => env('FIREFLY_LAYOUT', 'v1'),
+    'layout'                  => env('FIREFLY_III_LAYOUT', 'v1'),
     'update_minimum_age'      => 6,
     'default_location'        => [
         'longitude'  => env('MAP_DEFAULT_LONG', '5.916667'),

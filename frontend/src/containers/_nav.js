@@ -1,10 +1,30 @@
 export default [
+
     {
+        computed: {
+            navbar() {
+                return {
+                    _name: 'CSidebarNav',
+                    _children: [
+                        {
+                            _name: 'CSidebarNavItem',
+                            name: 'Dashboard',
+                            to: '/dashboard',
+                            icon: 'cil-speedometer'
+                        },
+                        {
+                            _name: 'CSidebarNavTitle',
+                            _children: ['Financial control']
+                        },
+                    ],
+                }
+            },
+        },
         _name: 'CSidebarNav',
         _children: [
             {
                 _name: 'CSidebarNavItem',
-                name: $t('test'),//'Test',//i18n.t('firefly.welcome_back')
+                name: 'Dashboard',
                 to: '/dashboard',
                 icon: 'cil-speedometer'
             },
